@@ -165,10 +165,10 @@ elif option == "ML":
         ])
 
 
-if st.button("Predict"):
-    prediction = gb.predict(input_data)
-    if prediction[0] == 1:
-        st.write("Accept The Loan")
-    else:
-        st.write("Reject The Loan")
+    if st.button("Predict"):
+       prediction = gb.predict(input_data)
+       if prediction[0] == 1:
+           st.write("Accept The Loan")
+       else:
+           st.write("Reject The Loan")
 
